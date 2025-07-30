@@ -30,4 +30,10 @@ Sendo `meu_app_flask` o nome dado à sua imagem.
 A primeira porta 5000 é a porta local.
 A segunda porta 5000 é a porta do container. Para alterá-la, você precisa alterar o arquivo Dockerfile.
 
+## deploy
 
+1. Logar no servidor
+2. Clonar ou atualizar o repositório
+3. Buildar imagem
+4. Executar imagem
+`docker run -d --name barcode-reader-v2 -p 0.0.0.0:3160:5000/tcp barcode-reader`
